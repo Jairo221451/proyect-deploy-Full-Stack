@@ -4,18 +4,19 @@ const cors = require('cors');
 const path = require('path');
 const app = express();
 
-// Middlewares
+// Middlewares - CORS actualizado
 app.use(cors({
   origin: [
     'http://localhost:3000',
     'http://localhost:3001', 
-    'http://localhost:5173', // Por si usas Vite
-    'https://tu-frontend-url-cuando-lo-despliegues.com'
+    'http://localhost:5173',  // ← Este es el que faltaba (Vite)
+    'http://localhost:4173',  // Preview de Vite
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'Public', 'uploads')));
 
