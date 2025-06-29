@@ -5,7 +5,7 @@ import { Card, Container, Row, Col, Button, Spinner, Alert, Modal } from 'react-
 // Importación de componentes de React Router para navegación y enlaces
 import { Link, useNavigate } from 'react-router-dom';
 // Cliente API personalizado para llamadas al backend
-import api from '../Services/api';
+import api from '../services/api';
 
 // Definición del componente principal
 const MisEmprendimientos = () => {
