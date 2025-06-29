@@ -9,8 +9,9 @@ app.use(cors({
   origin: [
     'http://localhost:3000',
     'http://localhost:3001', 
-    'http://localhost:5173',  // ← Este es el que faltaba (Vite)
+    'http://localhost:5173',  // Vite dev
     'http://localhost:4173',  // Preview de Vite
+    'https://proyect-deploy-full-stack-production-45cc.up.railway.app' // ← Tu frontend en Railway (SIN la barra final)
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
