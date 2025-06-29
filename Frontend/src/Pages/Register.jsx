@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Form, Button, Container, Alert, Card } from 'react-bootstrap';
-import { registerUser } from '../services/api';
+import { registerUser } from '../Services/api';
 
 const Register = () => {
   const [nombre, setNombre] = useState('');

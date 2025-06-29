@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Container, Row, Col, Spinner, Button } from 'react-bootstrap';
-import { getEmprendimientos } from '../services/api';
+import { getEmprendimientos } from '../Services/api';
 import { useNavigate } from 'react-router-dom'; // ✅ IMPORT NECESARIO
 
 const Home = () => {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Container, Row, Col, Spinner } from 'react-bootstrap';
-import { getEmprendimientos } from '../services/api';
+import { getEmprendimientos } from '../Services/api';
 
 const Home = () => {
   const [emprendimientos, setEmprendimientos] = useState([]);
