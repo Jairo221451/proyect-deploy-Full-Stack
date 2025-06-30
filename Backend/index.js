@@ -19,6 +19,8 @@ app.use(cors({
 }));
 
 app.use(express.json());
+const uploadsPath = path.join(__dirname, 'Public', 'uploads');
+console.log('Ruta de uploads:', uploadsPath);
 app.use('/uploads', express.static(path.join(__dirname, 'Public', 'uploads')));
 
 // Rutas
