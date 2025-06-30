@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://proyect-deploy-full-stack-production.up.railway.app/api';
+const API_URL = 'https://proyect-desarrollo-software-production.up.railway.app/api';
 
 
 const api = axios.create({
