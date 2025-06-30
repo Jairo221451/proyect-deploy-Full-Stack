@@ -44,8 +44,10 @@ const Footer = ({ darkMode }) => {
                 <ul className="footer-links">
                   <li><Link to="/">Inicio</Link></li>
                   <li><Link to="/emprendimientos">Emprendimientos</Link></li>
-                  <li><Link to="/about">Acerca de</Link></li>
-                  <li><Link to="/contact">Contacto</Link></li>
+                  <li><Link to="/acerca-de">Acerca de</Link></li>
+                  <li><Link to="/contacto">Contacto</Link></li>
+                  {/* <li><Link to="/about">Acerca de</Link></li>
+                  <li><Link to="/contact">Contacto</Link></li> */}
                 </ul>
               </div>
             </Col>
@@ -69,33 +71,10 @@ const Footer = ({ darkMode }) => {
                 <h6 className="footer-title">Soporte</h6>
                 <ul className="footer-links">
                   <li><Link to="/faq">Preguntas Frecuentes</Link></li>
-                  <li><Link to="/terminos">Términos de Uso</Link></li>
+                  <li><Link to="/terminos-uso">Términos de Uso</Link></li>
                   <li><Link to="/privacidad">Privacidad</Link></li>
-                  <li><Link to="/reportar">Reportar Problema</Link></li>
+                  <li><Link to="/reportar-problema">Reportar Problema</Link></li>
                 </ul>
-              </div>
-            </Col>
-
-            {/* Newsletter */}
-            <Col lg={2} md={12}>
-              <div className="footer-section">
-                <h6 className="footer-title">Newsletter</h6>
-                <p className="newsletter-text">
-                  Mantente al día con las últimas novedades
-                </p>
-                <div className="newsletter-form">
-                  <div className="input-group">
-                    <input 
-                      type="email" 
-                      className="form-control newsletter-input" 
-                      placeholder="Tu email"
-                      aria-label="Email para newsletter"
-                    />
-                    <Button variant="primary" className="newsletter-btn">
-                      <i className="bi bi-arrow-right"></i>
-                    </Button>
-                  </div>
-                </div>
               </div>
             </Col>
           </Row>
@@ -113,11 +92,9 @@ const Footer = ({ darkMode }) => {
             </Col>
             <Col md={6}>
               <div className="footer-bottom-links">
-                <Link to="/terminos">Términos</Link>
                 <span className="separator">•</span>
                 <Link to="/privacidad">Privacidad</Link>
-                <span className="separator">•</span>
-                <Link to="/cookies">Cookies</Link>
+                <span className="separator">•</span>                
               </div>
             </Col>
           </Row>
