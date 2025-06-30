@@ -4,8 +4,6 @@ const cors = require('cors');
 const path = require('path');
 const app = express();
 
-
-
 // Middlewares - CORS actualizado
 app.use(cors({
   origin: [
@@ -21,22 +19,7 @@ app.use(cors({
 }));
 
 app.use(express.json());
-// Agrega esto ANTES de la línea del static para ver la ruta
-const fs = require('fs');
-const uploadsPath = path.join(__dirname, 'Public', 'uploads');
-
-// Listar archivos en la carpeta uploads
-try {
-  const files = fs.readdirSync(uploadsPath);
-  console.log('📁 Archivos en uploads:', files);
-} catch (error) {
-  console.error('❌ Error leyendo carpeta uploads:', error.message);
-}
-
-console.log('🔍 Ruta de uploads:', uploadsPath);
-console.log('🔍 ¿Existe la carpeta?', require('fs').existsSync(uploadsPath));
-
-app.use('/uploads', express.static(uploadsPath));
+app.use('/uploads', express.static(path.join(__dirname, 'Public', 'uploads')));
 
 // Rutas
 const authRoutes = require('./Routes/auth.routes');
