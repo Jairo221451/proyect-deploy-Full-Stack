@@ -7,7 +7,7 @@ export default defineConfig({
     'process.env.REACT_APP_BACKEND_URL': '"https://proyect-desarrollo-software-production.up.railway.app/api"'
   },
   server: {
-    host: '0.0.0.0', // Permite conexiones externas
+    host: '0.0.0.0',
     port: 5173
   },
   preview: {
