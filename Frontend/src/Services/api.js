@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // ¡URL CORREGIDA! - Faltaba "desarrollo-software"
-const API_URL = 'https://proyect-desarrollo-software-production.up.railway.app/api';
+const API_URL = process.env.REACT_APP_BACKEND_URL || 'https://proyect-desarrollo-software-production.up.railway.app/api';
 
 const api = axios.create({
   baseURL: API_URL,
